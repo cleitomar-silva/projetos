@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6bb1e38-f0d6-43c7-b845-4f3a8c3b47d7" name="Default Changelist" comment="" />
+    <list default="true" id="5902c8e8-b765-488e-993b-c054fe9b0edc" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,11 +19,7 @@
       </list>
     </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="ProjectId" id="1f5UGJIR6tCB2qlaPRi7R621EpQ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1fok45q7LmLR7vSwwsL3OSBLBuU" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -32,7 +28,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Menu Tab" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="ServiceViewManager">
@@ -52,14 +48,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e6bb1e38-f0d6-43c7-b845-4f3a8c3b47d7" name="Default Changelist" comment="" />
-      <created>1595507349255</created>
+      <changelist id="5902c8e8-b765-488e-993b-c054fe9b0edc" name="Default Changelist" comment="" />
+      <created>1596891639012</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1595507349255</updated>
-      <workItem from="1595507350714" duration="7511000" />
-      <workItem from="1595521286123" duration="6530000" />
-      <workItem from="1595591971479" duration="95000" />
+      <updated>1596891639012</updated>
+      <workItem from="1596891640548" duration="1018000" />
     </task>
     <servers />
   </component>
@@ -67,13 +61,9 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1595592064908">
+    <state x="517" y="288" key="NewPhpFileDialog" timestamp="1596891664618">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1595592064908" />
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1595591977668">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1595591977668" />
+    <state x="517" y="288" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1596891664618" />
   </component>
 </project>
