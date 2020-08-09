@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6bb1e38-f0d6-43c7-b845-4f3a8c3b47d7" name="Default Changelist" comment="" />
+    <list default="true" id="7f70ce62-16e9-47c8-8557-e6d24ca1fae7" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +15,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="CSS File" />
       </list>
     </option>
@@ -22,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1f5UGJIR6tCB2qlaPRi7R621EpQ" />
+  <component name="ProjectId" id="1f8FyTc3HqdOu1gngActqlQ0Pen" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -30,9 +31,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Menu Tab" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/projetos/unichristus-mestrado" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="ServiceViewManager">
@@ -52,14 +54,14 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e6bb1e38-f0d6-43c7-b845-4f3a8c3b47d7" name="Default Changelist" comment="" />
-      <created>1595507349255</created>
+      <changelist id="7f70ce62-16e9-47c8-8557-e6d24ca1fae7" name="Default Changelist" comment="" />
+      <created>1595592066944</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1595507349255</updated>
-      <workItem from="1595507350714" duration="7511000" />
-      <workItem from="1595521286123" duration="6530000" />
-      <workItem from="1595591971479" duration="95000" />
+      <updated>1595592066944</updated>
+      <workItem from="1595592068403" duration="5216000" />
+      <workItem from="1596625464932" duration="144000" />
+      <workItem from="1596632440743" duration="199000" />
     </task>
     <servers />
   </component>
@@ -67,13 +69,13 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1595592064908">
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1596632639135">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1595592064908" />
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1595591977668">
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1596632639135" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1596632456616">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1595591977668" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1596632456616" />
   </component>
 </project>
