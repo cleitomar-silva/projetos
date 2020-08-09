@@ -7,9 +7,21 @@
 
     $con = new mysqli($servidor, $usuario, $senha, $bd);
 
+    //c = tabela cursos
+    //t = tabela categoria
+
+    /* COM WHERE
+
+      $resultado = "select c.*, t. `nome` as categoria from `cursos` as c
+            inner join  `categorias` as t on
+            c. `categoria_id` = t.`id`
+            WHERE t.id = 1
+            order by c.`nome` asc
+    ";*/
+
     $resultado = "select c.*, t. `nome` as categoria from `cursos` as c
         inner join  `categorias` as t on 
-        c. `categoria_id` = t.`id`
+        c. `categoria_id` = t.`id`        
         order by c.`nome` asc
     ";
 
