@@ -9,7 +9,7 @@ switch ($_GET['a'])
         $curso->nome = $_POST['nome'];
         $curso->categoria = $_POST['categoria'];
         Cursos::incluirCurso($curso);
-        header("Location:../view/cursos.php");
+        header("Location:../view/curso-novo.php");
         break;
 
     case 'excluir':

@@ -11,4 +11,16 @@ switch ($_GET['a'])
         header("Location:../view/categoria-novo.php");
         break;
 
+    case 'excluir':
+        Categorias::excluirCategoria($_GET['id']);
+        header("Location:../view/categoria.php");
+        break;
+
+    case 'editar':
+        $categoria->id = $_POST['id'];
+        $categoria->nome = $_POST['nome'];
+        Categorias::editarCategoria($categoria);
+        header("Location:../view/categoria.php");
+        break;
+
 }

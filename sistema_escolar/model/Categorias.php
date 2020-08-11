@@ -27,4 +27,26 @@ class Categorias
         $con->closeConnection();
     }
 
+    public static function excluirCategoria($id)
+    {
+        $con = new Connection();
+        $con->runData("delete from categorias where id = $id");
+        $con->closeConnection();
+    }
+
+    public static function pesquisarID($id)
+    {
+        $con = new Connection();
+        $cont = $con->runQuery("select * from categorias where id = $id");
+        $con->closeConnection();
+        return $cont[0];
+    }
+
+    public static function editarCategoria($categoria)
+    {
+        $con = new Connection();
+        $con->runData("update categorias set nome = '$categoria->nome' where id = '$categoria->id'");
+        $con->closeConnection();
+    }
+
 }

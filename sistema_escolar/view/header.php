@@ -96,6 +96,7 @@
                     <h6 class="collapse-header">Cadastros diversos</h6>
                     <a class="collapse-item" href="cursos.php">Cursos</a>
                     <a class="collapse-item" href="categoria.php">Categaria</a>
+                    <a class="collapse-item" href="instituicao.php">Instituição</a>
 
                     <!--<a class="collapse-item" href="login.html">Login</a>
                     <a class="collapse-item" href="register.html">Register</a>

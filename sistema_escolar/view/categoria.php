@@ -30,9 +30,9 @@ include_once '../model/Categorias.php';
                             <tr>
                                 <td class="js"><?php echo $row[1]?></td>
                                 <td>
-                                    <a href="">  <i class="fas fa-pencil-alt"></i></a>
+                                    <a href="categoria-editar.php?id=<?php echo $row[0]?>">  <i class="fas fa-pencil-alt"></i></a>
                                     &nbsp &nbsp
-                                    <a href="" onclick="return confirm('Confirmar Exclusão')"><i class="fas fa-trash"></i></a>
+                                    <a href="../controller/categoriaController.php?a=excluir&id=<?php echo $row[0]?>" onclick="return confirm('Confirmar Exclusão')"><i class="fas fa-trash"></i></a>
                                 </td>
                             </tr>
                         <?php endforeach;?>

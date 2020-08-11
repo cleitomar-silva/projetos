@@ -66,7 +66,8 @@
       <workItem from="1597059998829" duration="10011000" />
       <workItem from="1597070068893" duration="20058000" />
       <workItem from="1597099889937" duration="2137000" />
-      <workItem from="1597144798037" duration="5850000" />
+      <workItem from="1597144798037" duration="5907000" />
+      <workItem from="1597150928986" duration="7751000" />
     </task>
     <servers />
   </component>
@@ -78,28 +79,17 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597149066663" />
-    <state x="456" y="179" key="NewPhpClassDialog" timestamp="1597067005825">
+    <state x="456" y="179" key="NewPhpClassDialog" timestamp="1597178651689">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="456" y="179" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1597067005825" />
-    <state x="517" y="288" key="NewPhpFileDialog" timestamp="1597147598467">
+    <state x="456" y="179" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1597178651689" />
+    <state x="517" y="288" key="NewPhpFileDialog" timestamp="1597179802885">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="288" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1597147598467" />
-    <state x="701" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1597144927230">
+    <state x="517" y="288" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1597179802884" />
+    <state x="701" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1597151177297">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="701" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1597144927230" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/sistema_escolar/view/cursos.php</url>
-          <line>30</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="701" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1597151177297" />
   </component>
 </project>

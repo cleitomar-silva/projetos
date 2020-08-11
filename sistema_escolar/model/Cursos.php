@@ -45,6 +45,15 @@ class Cursos
     {
         $con = new Connection();
         $con->runData("insert into cursos (nome, categoria_id) values ('$curso->nome', '$curso->categoria')");
+
+        $rows = $con->affected_rows();
+        if($rows > 0)
+        {
+            $_SESSION['msg-sucess'] =  "Cadastro efetuado com sucesso!";
+        }else{
+            $_SESSION['msg-error'] = "Erro, Tente novamente!";
+        }
+
         $con->closeConnection();
     }
 
