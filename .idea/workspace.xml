@@ -12,10 +12,18 @@
       <executable />
     </execution>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1fonfM1iOhZay3y3tfMwKAURiHI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -24,7 +32,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/projetos/unichristus-mestrado" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -50,6 +59,14 @@
       <updated>1596893414443</updated>
       <workItem from="1596893416574" duration="3970000" />
       <workItem from="1596914673210" duration="13978000" />
+      <workItem from="1596982353166" duration="39000" />
+      <workItem from="1596982548288" duration="1443000" />
+      <workItem from="1597056967547" duration="2718000" />
+      <workItem from="1597059856932" duration="11000" />
+      <workItem from="1597059998829" duration="10011000" />
+      <workItem from="1597070068893" duration="20058000" />
+      <workItem from="1597099889937" duration="2137000" />
+      <workItem from="1597144798037" duration="3830000" />
     </task>
     <servers />
   </component>
@@ -57,13 +74,32 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="517" y="288" key="NewPhpFileDialog" timestamp="1596935340528">
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1597070906215">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="288" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1596935340527" />
-    <state x="701" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1596914674157">
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597070906215" />
+    <state x="456" y="179" key="NewPhpClassDialog" timestamp="1597067005825">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="701" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1596914674157" />
+    <state x="456" y="179" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1597067005825" />
+    <state x="517" y="288" key="NewPhpFileDialog" timestamp="1597147598467">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="517" y="288" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1597147598467" />
+    <state x="701" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1597144927230">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="701" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1597144927230" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/sistema_escolar/view/cursos.php</url>
+          <line>30</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
