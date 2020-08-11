@@ -26,6 +26,12 @@ class Connection {
         $this->connection->query($sql);
     }
 
+    public function affected_rows()
+    {
+        $container = mysqli_affected_rows($this->connection);
+        return $container;
+    }
+
     public function closeConnection(){
         $this->connection->close();
     }

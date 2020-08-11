@@ -32,7 +32,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/projetos/unichristus-mestrado" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/site-cifras-master/site-cifras-master" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="ServiceViewManager">
@@ -66,7 +66,7 @@
       <workItem from="1597059998829" duration="10011000" />
       <workItem from="1597070068893" duration="20058000" />
       <workItem from="1597099889937" duration="2137000" />
-      <workItem from="1597144798037" duration="3830000" />
+      <workItem from="1597144798037" duration="5850000" />
     </task>
     <servers />
   </component>
@@ -74,10 +74,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1597070906215">
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1597149066663">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597070906215" />
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597149066663" />
     <state x="456" y="179" key="NewPhpClassDialog" timestamp="1597067005825">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
