@@ -4,7 +4,7 @@ include_once 'Connection.php';
 
 class Categorias
 {
-    public static function listarCategoria(){
+    public  function listarCategoria(){
         $con = new Connection();
         $all = $con->runQuery("select * from categorias");
         $con->closeConnection();
@@ -39,7 +39,16 @@ class Categorias
         $con = new Connection();
         $cont = $con->runQuery("select * from categorias where id = $id");
         $con->closeConnection();
-        return $cont[0];
+
+        foreach ($cont as $row){
+
+            $lista = array(
+                'id' => $row['id'],
+                'nome' => $row['nome']
+            );
+        }
+
+        return $lista;
     }
 
     public static function editarCategoria($categoria)

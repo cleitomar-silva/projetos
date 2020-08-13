@@ -28,11 +28,11 @@ include_once '../model/Instituicao.php';
                     <tbody>
                     <?php foreach (Instituicao::listarCursos() as $row): ?>
                         <tr>
-                            <td class="js"><?php echo $row[1]?></td>
+                            <td class="js"><?php echo $row['nome']?></td>
                             <td>
-                                <a href="instituicao.php?id=<?php echo $row[0]?>">  <i class="fas fa-pencil-alt"></i></a>
+                                <a href="instituicao-editar.php?id=<?php echo $row['id']?>">  <i class="fas fa-pencil-alt"></i></a>
                                 &nbsp &nbsp
-                                <a href="../controller/instituicaoController.php?a=excluir&id=<?php echo $row[0]?>" onclick="return confirm('Confirmar Exclusão')"><i class="fas fa-trash"></i></a>
+                                <a href="../controller/instituicaoController.php?a=excluir&id=<?php echo $row['id']?>" onclick="return confirm('Confirmar Exclusão')"><i class="fas fa-trash"></i></a>
                             </td>
                         </tr>
                     <?php endforeach;?>

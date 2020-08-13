@@ -24,6 +24,7 @@ class Cursos
             inner join  `categorias` as t on 
             c. `categoria_id` = t.`id`        
             order by c.`nome` asc");
+
         $con->closeConnection();
 
         return $all;
@@ -70,7 +71,20 @@ class Cursos
             inner join  `categorias` as t on 
             c. `categoria_id` = t.`id` 
             where c.id = $id");
-        return $cont[0];
+        $con->closeConnection();
+
+        foreach ($cont as $row){
+
+            $lista = array(
+                'id' => $row['id'],
+                'nome' => $row['nome'],
+                'categoria_id' => $row['categoria_id'],
+                'categoria' => $row['categoria'],
+            );
+
+        }
+
+        return $lista;
     }
 
     public static function excluirCurso($id)

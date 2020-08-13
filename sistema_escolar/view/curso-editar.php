@@ -5,7 +5,6 @@ include "../model/Categorias.php";
 include "header.php";
 $curso = Cursos::pesquisarID($_GET['id']);
 ?>
-
 <div class="container mt-5">
     <div class="card">
         <div class="card-header">
@@ -14,16 +13,17 @@ $curso = Cursos::pesquisarID($_GET['id']);
         <div class="card-body">
             <form method="post" action="../controller/cursoController.php?a=editar">
                 <div class="form-group">
-                    <input type="hidden" class="form-control form-control-lg" name="id" value="<?php echo $curso[0]?>">
+                    <input type="hidden" class="form-control form-control-lg" name="id" value="<?php echo $curso['id']?>">
 
-                    <input type="text" class="form-control form-control-lg" name="nome" value="<?php echo $curso[1]?>" placeholder="Nome do curso" required>
+                    <input type="text" class="form-control form-control-lg" name="nome" value="<?php echo $curso['nome']?>" placeholder="Nome do curso" required>
                 </div>
                 <div class="form-group">
                     <select class="form-control form-control-lg" name="categoria">
-                        <option value="<?php echo $curso[2]?>"><?php echo $curso[3]?></option>
+                        <option value="<?php echo $curso['categoria_id']?>"><?php echo $curso['categoria']?></option>
                         <option></option>
+
                         <?php foreach (Categorias::listarCategoria() as $row):?>
-                            <option value="<?php echo $row[0]?>"><?php echo $row[1]?></option>
+                            <option value="<?php echo $row['id']?>"><?php echo $row['nome']?></option>
                         <?php endforeach;?>
                     </select>
                 </div>

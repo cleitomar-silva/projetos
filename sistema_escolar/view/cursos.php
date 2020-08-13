@@ -28,14 +28,14 @@ include "header.php";
                         </thead>
 
                         <tbody>
-                            <?php foreach (array_reverse(Cursos::listarCursos()) as $row): ?>
+                            <?php  foreach (Cursos::listarCursos() as $row): ?>
                                 <tr>
-                                    <td class="js"><?php echo $row[1]?></td>
-                                    <td class="js"><?php echo $row[3]?></td>
+                                    <td class="js"><?php echo $row['nome']?></td>
+                                    <td class="js"><?php echo $row["categoria"]?></td>
                                     <td>
-                                        <a href="curso-editar.php?id=<?php echo $row[0] ?>">  <i class="fas fa-pencil-alt"></i></a>
+                                        <a href="curso-editar.php?id=<?php echo $row['id'] ?>">  <i class="fas fa-pencil-alt"></i></a>
                                         &nbsp &nbsp
-                                        <a href="../controller/cursoController.php?a=excluir&id=<?php echo $row[0]?>" onclick="return confirm('Confirmar Exclusão')"><i class="fas fa-trash"></i></a>
+                                        <a href="../controller/cursoController.php?a=excluir&id=<?php echo $row['id']?>" onclick="return confirm('Confirmar Exclusão')"><i class="fas fa-trash"></i></a>
                                     </td>
                                 </tr>
                             <?php endforeach;?>

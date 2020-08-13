@@ -19,8 +19,9 @@ class Connection {
 
     public function runQuery($sql){
         $container = $this->connection->query($sql);
-        return $container->fetch_all();
+        return $container;
     }
+
 
     public function runData($sql){
         $this->connection->query($sql);

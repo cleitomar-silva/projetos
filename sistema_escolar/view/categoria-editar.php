@@ -13,9 +13,9 @@ $categoria = Categorias::pesquisarID($_GET['id']);
             <form method="post" action="../controller/categoriaController.php?a=editar">
                 <div class="form-group">
 
-                    <input type="hidden" class="form-control form-control-lg" name="id" value="<?php echo $categoria[0]?>">
+                    <input type="hidden" class="form-control form-control-lg" name="id" value="<?php echo $categoria['id']?>">
 
-                    <input type="text" class="form-control form-control-lg" name="nome" value="<?php echo $categoria[1]?>" placeholder="Nome da categoria" required>
+                    <input type="text" class="form-control form-control-lg" name="nome" value="<?php echo $categoria['nome']?>" placeholder="Nome da categoria" required>
                 </div>
 
                 <button type="submit" class="btn btn-primary">Enviar</button>
