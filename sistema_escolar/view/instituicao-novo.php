@@ -10,7 +10,18 @@ include "header.php";
             Incluir nova Instituição
         </div>
         <div class="card-body">
-
+            <?php
+            if(isset($_SESSION['msg-error']))
+            {
+                echo "<p class = 'text-center alert alert-danger'>{$_SESSION['msg-error']}</p>";
+                session_unset();
+            }
+            if(isset($_SESSION['msg-sucess']))
+            {
+                echo "<p class = 'text-center alert  alert-success'>{$_SESSION['msg-sucess']}</p>";
+                session_unset();
+            }
+            ?>
             <form method="post" action="../controller/instituicaoController.php?a=novo">
                 <div class="form-group">
                     <input type="text" class="form-control form-control-lg" name="nome" placeholder="Nome da instituição" required>
