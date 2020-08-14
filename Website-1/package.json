@@ -1,0 +1,27 @@
+{
+  "name": "site-responsivo",
+  "version": "1.0.0",
+  "description": "site-responsivo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cleitomar-silva/site-responsivo.git"
+  },
+  "author": "cleitomar-rodrigues",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cleitomar-silva/site-responsivo/issues"
+  },
+  "homepage": "https://github.com/cleitomar-silva/site-responsivo#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "yarn": "^1.22.4"
+  }
+}
