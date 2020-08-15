@@ -26,7 +26,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../website-2" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
@@ -67,6 +67,7 @@
       <workItem from="1597448596068" duration="110000" />
       <workItem from="1597448755854" duration="26000" />
       <workItem from="1597448784159" duration="3997000" />
+      <workItem from="1597499290796" duration="141000" />
     </task>
     <servers />
   </component>
@@ -74,13 +75,13 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1597448780360">
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1597499429480">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597448780360" />
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1597448755326">
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597499429480" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1597499355064">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1597448755326" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1597499355064" />
   </component>
 </project>
