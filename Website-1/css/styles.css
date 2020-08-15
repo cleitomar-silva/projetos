@@ -4,11 +4,54 @@
   font-family: "Century Gothic"; }
 
 header {
-  background-image: url("../img/praia.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/praia.jpg");
   height: 100vh;
   background-size: cover;
   background-position: center; }
-
-ul {
-  float: right;
-  list-style-type: none; }
+  header .main {
+    max-width: 1200px;
+    margin: auto; }
+    header .main .logo img {
+      float: left;
+      width: 150px;
+      height: auto; }
+    header .main ul {
+      float: right;
+      list-style-type: none;
+      margin-top: 25px; }
+      header .main ul li {
+        display: inline-block; }
+        header .main ul li a {
+          text-decoration: none;
+          color: #fff;
+          padding: 5px 20px;
+          border: 1px solid transparent;
+          transition: 0.6s ease; }
+        header .main ul li a:hover {
+          background-color: #ffffff;
+          color: #000000; }
+      header .main ul li.active a {
+        background-color: #ffffff;
+        color: #000000; }
+  header .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    header .title h1 {
+      color: #ffffff;
+      font-size: 64px; }
+  header .button {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    header .button .btn {
+      border: 1px solid #ffffff;
+      padding: 10px 30px;
+      color: #ffffff;
+      text-decoration: none;
+      transition: 0.6s ease; }
+    header .button .btn:hover {
+      background-color: #ffffff;
+      color: #000000; }
