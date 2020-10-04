@@ -29,8 +29,8 @@ include "../model/Cursos.php";
                     <tbody>
                     <?php foreach (Cursos::buscarCurso($_POST['pesquisar']) as $row): ?>
                         <tr>
-                            <td class="js"><?php echo $row[1]?></td>
-                            <td class="js"><?php echo $row[3]?></td>
+                            <td class="js"><?php echo $row['nome']?></td>
+                            <td class="js"><?php echo $row['categoria']?></td>
                         </tr>
                     <?php endforeach;?>
                     </tbody>
