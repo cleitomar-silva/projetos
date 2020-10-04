@@ -355,14 +355,14 @@ print inverteData($_POST['data']);
         var validformat=/^\d{2}\/\d{2}\/\d{4}$/ //Basic check for format validity
         var returnval=false
         if (!validformat.test(input))
-            alert("Invalid Date Format. Please correct and submit again."+input)
+            alert("Formato de data inválido. Por favor, corrija e envie novamente!")
         else{ //Detailed check for valid date ranges
             var dayfield=input.split("/")[0]
             var monthfield=input.split("/")[1]
             var yearfield=input.split("/")[2]
             var dayobj = new Date(yearfield, monthfield-1, dayfield)
             if ((dayobj.getMonth()+1!=monthfield)||(dayobj.getDate()!=dayfield)||(dayobj.getFullYear()!=yearfield))
-                alert("Invalid Day, Month, or Year range detected. Please correct and submit again."+input)
+                alert("Detectado intervalo inválido de dia, mês ou ano. Por favor, corrija!")
             else
                 returnval=true
         }
