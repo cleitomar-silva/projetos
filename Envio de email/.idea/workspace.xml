@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34a66054-5195-44d1-a533-21ac7601f493" name="Default Changelist" comment="" />
+    <list default="true" id="13a16e76-b996-4f16-94b7-ef73f5dbefc4" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,43 +10,26 @@
   <component name="ComposerSettings">
     <execution />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaScript File" />
-        <option value="HTML File" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="ProjectId" id="1iN07EMWPdws30tipbPxv4T422O" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1iWcRELrjyfHyqGuKpnPVQ7KTFT" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../portal" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../portal" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="34a66054-5195-44d1-a533-21ac7601f493" name="Default Changelist" comment="" />
-      <created>1601732572309</created>
+      <changelist id="13a16e76-b996-4f16-94b7-ef73f5dbefc4" name="Default Changelist" comment="" />
+      <created>1602026778271</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1601732572309</updated>
-      <workItem from="1601732573368" duration="270000" />
-      <workItem from="1601741109555" duration="6444000" />
-      <workItem from="1601753908575" duration="16475000" />
-      <workItem from="1601773611848" duration="698000" />
-      <workItem from="1601854070020" duration="74000" />
+      <updated>1602026778271</updated>
+      <workItem from="1602026779370" duration="4070000" />
     </task>
     <servers />
   </component>
@@ -54,9 +37,13 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1601854142695">
+    <state x="718" y="119" key="FileChooserDialogImpl" timestamp="1602030912576">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1601854142695" />
+    <state x="718" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1602030912576" />
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1602026788097">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1602026788097" />
   </component>
 </project>
