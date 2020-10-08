@@ -2,8 +2,9 @@
 include_once 'header.php';
 include_once 'model/TopCifras.php';
 $codigo = TopCifras::searchId($_GET['id']);
+include_once 'protect.php';
+protect();
 ?>
-
 
 
 <!-- start navbar -->

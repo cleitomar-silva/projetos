@@ -14,6 +14,8 @@ switch ($_GET['a']) {
             $tiposPermitidos    =   ['pdf','docx','doc','jpg','jpeg','png'];
             $tamanho            =   $arquivo->imagem['size'];
 
+
+
             $extensao           =   explode('.',$nome);
             $extensao           =   end($extensao);
             $arquivo->novoNome  =   rand() ."-$nome". '.' . $extensao;

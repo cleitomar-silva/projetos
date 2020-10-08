@@ -5,7 +5,7 @@ include_once 'model/TopCifras.php';
 include_once 'model/Noticias.php';
 include_once 'model/Videos.php';
 
-include_once'protect.php';
+include_once 'protect.php';
 protect();
 
 if(isset($_SESSION['msg-error'])): ?>
