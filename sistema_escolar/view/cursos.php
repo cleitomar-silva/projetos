@@ -21,6 +21,7 @@ include "header.php";
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                             <tr>
+                                <th class="d-none" >Id</th>
                                 <th>Nome</th>
                                 <th>Categoria</th>
                                 <th>Opções</th>
@@ -30,8 +31,9 @@ include "header.php";
                         <tbody>
                             <?php  foreach (Cursos::listarCursos() as $row): ?>
                                 <tr>
-                                    <td class="js"><?php echo $row['nome']?></td>
-                                    <td class="js"><?php echo $row["categoria"]?></td>
+                                    <td class="d-none" ><?php echo $row['id']?></td>
+                                    <td><?php echo $row['nome']?></td>
+                                    <td ><?php echo $row["categoria"]?></td>
                                     <td>
                                         <a href="curso-editar.php?id=<?php echo $row['id'] ?>">  <i class="fas fa-pencil-alt"></i></a>
                                         &nbsp &nbsp

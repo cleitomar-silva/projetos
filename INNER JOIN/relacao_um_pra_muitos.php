@@ -19,7 +19,8 @@
             order by c.`nome` asc
     ";*/
 
-    $resultado = "select c.*, t. `nome` as categoria from `cursos` as c
+    $resultado = "select c.*, t. `nome` as categoria 
+        from `cursos` as c
         inner join  `categorias` as t on 
         c. `categoria_id` = t.`id`        
         order by c.`nome` asc

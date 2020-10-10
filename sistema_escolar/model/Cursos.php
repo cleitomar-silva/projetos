@@ -23,7 +23,7 @@ class Cursos
         $all = $con->runQuery("select c.*, t. `nome` as categoria from `cursos` as c
             inner join  `categorias` as t on 
             c. `categoria_id` = t.`id`        
-            order by c.`nome` asc");
+            order by c.`id` desc");
 
         $con->closeConnection();
 
