@@ -301,7 +301,7 @@
                     <div class="nav-link-icon"><i class="fas fa-map-marker-alt"></i></div>
                     Charts
                 </a>
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="tables.php">
                     <div class="nav-link-icon"><i class="fas fa-map-marker-alt"></i></div>
                     Tables
                 </a>
