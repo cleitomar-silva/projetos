@@ -66,7 +66,7 @@
         activatedPath = activatedPath[0];
     }
     else {
-        activatedPath = 'index.html';
+        activatedPath = 'index.php';
     }
 
     let targetAnchor = $('[href="' + activatedPath + '"]');
