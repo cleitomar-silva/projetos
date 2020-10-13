@@ -27,7 +27,7 @@
                             <?php foreach(RolesGive::listData() as $row): ?>
 
                                 <tr>
-                                    <td class="js">Nomes</td>
+                                    <td><?php echo $row[1] ?></td>
                                     <td>
                                         <a href="edit.php?id=<?php echo $row[0] ?>"><span class="oi oi-pencil"></span></a>
                                         <a href="../controller/RoleController.php?a=del&id=<?php echo $row[0] ?>" onclick="return confirm('Confirmar Exclusão?')"><span class="oi oi-trash"></span></a>
@@ -55,17 +55,7 @@
         <script src="../js/jquery.js"></script>
         <script src="../js/bootstrap.js"></script>
         <script>
-            function numero(){
-                var nomes = <?php echo json_encode(RolesGive::listData())?>
 
-                var js = document.getElementsByClassName('js');
-
-               for(var key in nomes){
-                    let texto = js[key].innerHTML = nomes[key][1];
-                    console.log(texto);
-                    
-                }
-            }
         </script>
 
     </body>

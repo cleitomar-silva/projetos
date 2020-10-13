@@ -36,9 +36,7 @@ function getComments() {
 getComments();
 
 
-$('#selecione').change(function(e){
-
-   
+$('#selecione').change(function(e){   
 
     var u_selecione = $('#selecione').val()
 
@@ -49,7 +47,6 @@ $('#selecione').change(function(e){
         dataType: 'json'
     }).done(function(result){
         console.log(result);
-
 
 
         for (var i = 0; i < result.length; i++) {

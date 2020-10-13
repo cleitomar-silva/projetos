@@ -13,7 +13,7 @@ switch ($_GET['a'])
 {
     case 'incl':
 
-        $role->name = $_POST['name'];
+        $role->nome = $_POST['nome'];
         RolesGive::createData($role);
         break;
 

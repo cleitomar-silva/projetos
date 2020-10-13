@@ -48,7 +48,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../cafaz_corretora_novo" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -70,6 +70,7 @@
       <workItem from="1602512639486" duration="6013000" />
       <workItem from="1602539658732" duration="38000" />
       <workItem from="1602540437620" duration="2588000" />
+      <workItem from="1602628543936" duration="33000" />
     </task>
     <servers />
   </component>
@@ -97,10 +98,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1602435285669" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1602539693628">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1602628577727">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1602539693628" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1602628577727" />
     <state x="517" y="287" key="NewPhpFileDialog" timestamp="1602544060910">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

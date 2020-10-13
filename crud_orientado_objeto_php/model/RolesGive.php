@@ -34,7 +34,7 @@ class RolesGive
     public static function createData($rol)
     {
         $con = new Connection();
-        $con->runData("insert into cliente (nome) values ('$rol->name')");
+        $con->runData("insert into cliente (nome) values ('$rol->nome')");
         $con->closeConnection();
     }
 
