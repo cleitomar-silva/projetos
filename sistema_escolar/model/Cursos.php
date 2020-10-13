@@ -20,10 +20,14 @@ class Cursos
     public static function listarCursos()
     {
         $con = new Connection();
-        $all = $con->runQuery("select c.*, t. `nome` as categoria from `cursos` as c
-            inner join  `categorias` as t on 
-            c. `categoria_id` = t.`id`        
-            order by c.`id` desc");
+      /*  $all = $con->runQuery("select c.*, t. `nome` as categoria 
+                from `cursos` as c 
+                inner join  `categorias` as t on c. `categoria_id` = t.`id`        
+                order by c.`id` desc");*/
+
+        $all = $con->runQuery("select c.id, c.nome,  cat.nome as categoria
+                                from cursos c
+                                inner join categorias cat ON cat.id = c.categoria_id");       
 
         $con->closeConnection();
 
