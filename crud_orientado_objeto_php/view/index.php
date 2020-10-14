@@ -13,9 +13,14 @@
                 <div class="col col-lg-6">
                     <h3>Papéis</h3>
                     <hr>
-                    <a href="include.php">
-                        <button type="button" class="btn btn-primary">Novo</button>
-                    </a>
+                    <form id="form1">
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" class="form-control" name="nome" id="nome" placeholder="Digite o Nome" required>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
                     <table class="table mt-4">
                         <thead>
                             <tr>
@@ -55,7 +60,20 @@
         <script src="../js/jquery.js"></script>
         <script src="../js/bootstrap.js"></script>
         <script>
+            $('#form1').submit(function(e){
+                e.preventDefault();
+                var nome = $('#nome').val();
 
+                $.ajax({
+                    url: '../controller/RoleController.php?a=incl',
+                    method: 'POST',
+                    data: {nome: nome},
+                   // dataType: 'json'
+                }).done(function(result){
+                    $('#nome').val('');
+                    location.reload();
+                });
+            });
         </script>
 
     </body>

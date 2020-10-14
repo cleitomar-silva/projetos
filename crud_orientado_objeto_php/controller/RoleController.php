@@ -15,6 +15,7 @@ switch ($_GET['a'])
 
         $role->nome = $_POST['nome'];
         RolesGive::createData($role);
+
         break;
 
     case 'edit':

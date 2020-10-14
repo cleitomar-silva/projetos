@@ -37,8 +37,7 @@
                     dataType: 'json'
                 }).done(function(result){
                     $('#nome').val('');
-                    console.log(result);
-                   // getComments();
+                    location.reload();
                 });
             });
         </script>
