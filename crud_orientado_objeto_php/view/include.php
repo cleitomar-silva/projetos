@@ -28,6 +28,7 @@
         <script>
             $('#form1').submit(function(e){
                 e.preventDefault();
+                var nome = $('#nome').val();
 
                 $.ajax({
                     url: '../controller/RoleController.php?a=incl',
