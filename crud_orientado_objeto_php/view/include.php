@@ -1,3 +1,4 @@
+<?php include_once '../model/RolesGive.php';?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -32,13 +33,13 @@
 
                 $.ajax({
                     url: '../controller/RoleController.php?a=incl',
-                    method: 'POST',
                     data: {nome: nome},
-                    dataType: 'json'
-                }).done(function(result){
-                    $('#nome').val('');
-                    location.reload();
-                });
+                    type: 'POST',
+                    dataType: 'json',
+                    success: function(retorno){
+                        console.log(retorno);
+                    }
+                })
             });
         </script>
 

@@ -32,10 +32,10 @@
                             <?php foreach(RolesGive::listData() as $row): ?>
 
                                 <tr>
-                                    <td><?php echo $row[1] ?></td>
+                                    <td><?php echo $row['nome'] ?></td>
                                     <td>
-                                        <a href="edit.php?id=<?php echo $row[0] ?>"><span class="oi oi-pencil"></span></a>
-                                        <a href="../controller/RoleController.php?a=del&id=<?php echo $row[0] ?>" onclick="return confirm('Confirmar Exclusão?')"><span class="oi oi-trash"></span></a>
+                                        <a href="edit.php?id=<?php echo $row['id'] ?>"><span class="oi oi-pencil"></span></a>
+                                        <a href="../controller/RoleController.php?a=del&id=<?php echo $row['id'] ?>" onclick="return confirm('Confirmar Exclusão?')"><span class="oi oi-trash"></span></a>
                                     </td>
                                 </tr>
 
@@ -52,28 +52,41 @@
         </div>
 
         <?php
-        //$array = [12,20,100,200];
+
 
         ?>
-
+        <form id="form">
+            <input type="text" name='id' id="id">
+        </form>
+        <input type="text" name='nome' id="nomeajax">
 
         <script src="../js/jquery.js"></script>
         <script src="../js/bootstrap.js"></script>
         <script>
-            $('#form1').submit(function(e){
-                e.preventDefault();
-                var nome = $('#nome').val();
+            $(document).ready(function(){
+                $("#form").submit(function(){
+                    var id = $("#id").val();
+                    console.log(id)
+                    if(id == ""){
 
-                $.ajax({
-                    url: '../controller/RoleController.php?a=incl',
-                    method: 'POST',
-                    data: {nome: nome},
-                   // dataType: 'json'
-                }).done(function(result){
-                    $('#nome').val('');
-                    location.reload();
-                });
-            });
+                    }else{
+                        $.ajax({
+                            url: '../controller/RoleController.php?a=pesq',
+                            data: {id: id},
+                            type: 'POST',
+                            dataType: 'json',
+                            success: function(retorno){
+                               console.log(retorno);
+                                $("#nomeajax").val(retorno.nome);
+                            },
+                            error: function(){
+                                alert("erro houve")
+                            }
+                        })
+                    }
+                    return false;
+                })
+            })
         </script>
 
     </body>

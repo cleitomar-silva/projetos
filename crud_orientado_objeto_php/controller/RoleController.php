@@ -30,6 +30,13 @@ switch ($_GET['a'])
     case 'del':
         RolesGive::deleteData($_GET['id']);
         break;
+
+    case 'pesq':
+        $mgs = RolesGive::searchId($_POST['id']);
+        die(json_encode($mgs));
+        break;
+
+
 }
 
 header("Location: ../view");

@@ -31,18 +31,41 @@ class RolesGive
         return $all;
     }
 
+    public static function listar($dado)
+    {
+        $con = new Connection();
+        $all = $con->runQuery("select * from cliente where nome like '%".$dado."%' ");
+        $con->closeConnection();
+        return $all;
+    }
+
     public static function createData($rol)
     {
         $con = new Connection();
         $con->runData("insert into cliente (nome) values ('$rol->nome')");
         $con->closeConnection();
+        $rows = $con->affected_rows();
+        if($rows > 0)
+        {
+            die(json_encode('sucesso'));
+
+        }else
+        {
+            die(json_encode('erro'));
+        }
     }
 
     public static function searchId($id)
     {
         $con = new Connection();
         $cont = $con->runQuery("select * from cliente where id = $id");
-        return $cont[0];
+        $mensagens = array();
+        foreach ($cont as $row){
+            $mensagens['id'] = $row['id'];
+            $mensagens['nome'] = $row['nome'];
+        }
+
+        return $mensagens;
     }
 
     public static function editData($rol)

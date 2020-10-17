@@ -28,12 +28,18 @@ class Connection {
     public function runQuery($sql)
     {
         $container = $this->connection->query($sql);
-        return $container->fetch_all();
+        return $container;
+    }
+
+    public function affected_rows(){
+        $container = mysqli_affected_rows($this->connection);
+        return $container;
     }
 
     public function runData($sql)
     {
-        $this->connection->query($sql);
+        $container = $this->connection->query($sql);
+        return $container;
     }
 
 
