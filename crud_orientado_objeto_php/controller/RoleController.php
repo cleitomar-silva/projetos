@@ -15,7 +15,7 @@ switch ($_GET['a'])
 
         $role->nome = $_POST['nome'];
         RolesGive::createData($role);
-
+        header("Location: ../view");
         break;
 
     case 'edit':
@@ -24,19 +24,18 @@ switch ($_GET['a'])
         $role->name = $_POST['name'];
 
         RolesGive::editData($role);
-
+        header("Location: ../view");
         break;
 
     case 'del':
         RolesGive::deleteData($_GET['id']);
+        header("Location: ../view");
         break;
 
     case 'pesq':
-        $mgs = RolesGive::searchId($_POST['id']);
-        die(json_encode($mgs));
+        $retorno = RolesGive::searchId($_POST['id']);
+        echo json_encode($retorno);
         break;
-
 
 }
 
-header("Location: ../view");

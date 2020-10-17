@@ -52,13 +52,18 @@
         </div>
 
         <?php
+        print_r(RolesGive::searchId(10));
 
 
         ?>
         <form id="form">
             <input type="text" name='id' id="id">
+            <input type="submit">
         </form>
-        <input type="text" name='nome' id="nomeajax">
+      <!--  <input type="text" name='nome' id="nomeajax">-->
+        <select name="selectajax" id="selectajax">
+            <option value="">select</option>
+        </select>
 
         <script src="../js/jquery.js"></script>
         <script src="../js/bootstrap.js"></script>
@@ -76,8 +81,21 @@
                             type: 'POST',
                             dataType: 'json',
                             success: function(retorno){
-                               console.log(retorno);
-                                $("#nomeajax").val(retorno.nome);
+                                if(retorno == ''){
+                                    alert('codigo nao cadastrado');
+                                }else{
+                                    console.log(retorno);
+                                   // $("#nomeajax").val(retorno.nome); //indivual
+                                    $("#selectajax option").remove();
+
+                                    $.each(retorno, function (i, item) {
+                                        $('#selectajax').append($('<option>', {
+                                            value: item.id,
+                                            text : item.nome
+                                        }));
+                                    });
+                                }
+
                             },
                             error: function(){
                                 alert("erro houve")

@@ -58,14 +58,16 @@ class RolesGive
     public static function searchId($id)
     {
         $con = new Connection();
-        $cont = $con->runQuery("select * from cliente where id = $id");
-        $mensagens = array();
-        foreach ($cont as $row){
-            $mensagens['id'] = $row['id'];
-            $mensagens['nome'] = $row['nome'];
+        $cont = $con->runQuery("select * from cliente where codigo = $id");
+
+        foreach ($cont as $key => $row){
+            $lista[$key] = array(       //para retornar so um retirar [$key]
+                'id'          => $row['id'],
+                'nome'        => $row['nome'],
+            );
         }
 
-        return $mensagens;
+        return $lista;
     }
 
     public static function editData($rol)
