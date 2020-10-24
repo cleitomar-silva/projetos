@@ -37,5 +37,12 @@ switch ($_GET['a'])
         echo json_encode($retorno);
         break;
 
+    case 'autocomplete':
+       // $resultPesquisa = filter_input(INPUT_GET, 'term', FILTER_SANITIZE_STRING);
+
+        $retorno = RolesGive::autoComplete($_GET['term']);
+        echo json_encode($retorno);
+        break;
+
 }
 

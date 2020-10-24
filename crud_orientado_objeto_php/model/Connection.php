@@ -42,6 +42,11 @@ class Connection {
         return $container;
     }
 
+    public function runQueryAssoc($sql){
+        $container = $this->connection->query($sql);
+        return $container->fetch_assoc();
+    }
+
 
     public function closeConnection()
     {

@@ -13,7 +13,7 @@ switch ($_GET['a']){
 
         foreach (Login::listarEmails() as $item)
         {
-            array_push($arrayEmails, $item[2]);
+            array_push($arrayEmails, $item[2]); 
         }
 
 

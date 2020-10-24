@@ -6,6 +6,12 @@
         <link rel="stylesheet" href="../css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="../open-iconic-master/font/css/open-iconic-bootstrap.css">
 
+        <link rel="stylesheet" href="../css/jquery-ui.css"> <!-- pesquisar autocomplete -->
+
+        <script src="../js/jquery.js"></script> <!-- pesquisar autocomplete -->
+        <script src="../js/jquery-ui.js"></script><!-- pesquisar autocomplete -->
+
+        <script src="../js/bootstrap.js"></script>
     </head>
     <body>
         <div class="container mt-5">
@@ -13,14 +19,24 @@
                 <div class="col col-lg-6">
                     <h3>Papéis</h3>
                     <hr>
-                    <form id="form1">
+
+
+                   <form id="form1" method="POST">
                         <div class="form-group">
-                            <label for="nome">Nome</label>
-                            <input type="text" class="form-control" name="nome" id="nome" placeholder="Digite o Nome" required>
+                            <label for="nomePes">Nome</label>
+                            <input type="text" class="form-control" name="nomePes" id="nomePes" placeholder="Digite o Nome" required>
                         </div>
+                        <div class="form-group">
+                            <label for="nomePes">Codigo</label>
+                            <input type="text" class="form-control" require name="codigoN" id="codigoN" placeholder="Digite o Nome" required>
+                        </div>                     
+
 
                         <button type="submit" class="btn btn-primary">Enviar</button>
                     </form>
+
+
+
                     <table class="table mt-4">
                         <thead>
                             <tr>
@@ -50,12 +66,13 @@
                 </div>
             </div>
         </div>
-
+            
         <?php
         print_r(RolesGive::searchId(10));
 
 
         ?>
+        <br>digitar valor do codigo
         <form id="form">
             <input type="text" name='id' id="id">
             <input type="submit">
@@ -65,10 +82,33 @@
             <option value="">select</option>
         </select>
 
-        <script src="../js/jquery.js"></script>
-        <script src="../js/bootstrap.js"></script>
-        <script>
+    
+
+        <script>          
+
+            
+                //pesquisa
+                $(function(){
+                    $("#nomePes").autocomplete({
+                        
+                        source: '../controller/RoleController.php?a=autocomplete',
+                        minLength: 4,                      
+                        select: function( event, ui ) {  
+
+                            setTimeout(function(){ 
+                                $("#codigoN").val(ui.item.value); 
+                                $("#nomePes").val(ui.item.label); 
+                            }, 0);  
+                        }                      
+                    })                  
+                });
+
+
+
+
+
             $(document).ready(function(){
+
                 $("#form").submit(function(){
                     var id = $("#id").val();
                     console.log(id)

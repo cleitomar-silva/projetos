@@ -64,10 +64,37 @@ class RolesGive
             $lista[$key] = array(       //para retornar so um retirar [$key]
                 'id'          => $row['id'],
                 'nome'        => $row['nome'],
+                'codigo'        => $row['codigo'],
             );
         }
 
         return $lista;
+    }
+
+
+    public static function autoComplete($dado)
+    {
+        $con = new Connection();
+        $cont = $con->runQuery("SELECT * FROM cliente WHERE nome LIKE '%".$dado."%' or  id LIKE '%".$dado."%' or codigo LIKE '%".$dado."%'  LIMIT 7");
+
+       /* foreach ($cont as $key => $row){
+            $lista = array(                
+               // 'id'          => $row['id'],
+                'nome'        => $row['nome'],
+                //'codigo'        => $row['codigo']              
+            );
+        }*/
+
+         foreach ($cont as  $row){
+            $temp_array = array();        
+            $temp_array['value'] = $row['id'];
+            $temp_array['label'] = $row['nome'];
+
+            $output[] = $temp_array;            
+        }
+
+
+        return $output;
     }
 
     public static function editData($rol)
