@@ -9,14 +9,17 @@
 include_once '../model/RolesGive.php';
 
 
+$role = (object)[]; 
+
 switch ($_GET['a'])
 {
     case 'incl':
-
+        
         $role->nome = $_POST['nome'];
-        RolesGive::createData($role);
-        header("Location: ../view");
+        $retorno = RolesGive::createData($role);
+        echo json_encode($retorno);
         break;
+       
 
     case 'edit':
 

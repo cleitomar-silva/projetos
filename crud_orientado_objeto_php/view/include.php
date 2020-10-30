@@ -25,21 +25,26 @@
                 </div>
             </div>
         </div>
+        <?php $retorno = 'ok';?>
         <script src="../js/jquery.js"></script>
         <script>
             $('#form1').submit(function(e){
                 e.preventDefault();
                 var nome = $('#nome').val();
-
+             
                 $.ajax({
                     url: '../controller/RoleController.php?a=incl',
                     data: {nome: nome},
-                    type: 'POST',
-                    dataType: 'json',
-                    success: function(retorno){
-                        console.log(retorno);
-                    }
-                })
+                    method: 'POST',                  
+                    dataType: 'json', 
+
+                }).done(function(result){   
+                                    
+                    console.log(result);
+                   
+                }).fail(function(result){                   
+                   console.log(result);                  
+               });
             });
         </script>
 

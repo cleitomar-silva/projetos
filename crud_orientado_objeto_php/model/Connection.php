@@ -38,8 +38,8 @@ class Connection {
 
     public function runData($sql)
     {
-        $container = $this->connection->query($sql);
-        return $container;
+        $this->connection->query($sql);
+      
     }
 
     public function runQueryAssoc($sql){

@@ -43,16 +43,19 @@ class RolesGive
     {
         $con = new Connection();
         $con->runData("insert into cliente (nome) values ('$rol->nome')");
-        $con->closeConnection();
+       
         $rows = $con->affected_rows();
         if($rows > 0)
         {
-            die(json_encode('sucesso'));
+            return 'sucesso';
 
         }else
         {
-            die(json_encode('erro'));
+           return 'erro';
         }
+
+     
+        
     }
 
     public static function searchId($id)
