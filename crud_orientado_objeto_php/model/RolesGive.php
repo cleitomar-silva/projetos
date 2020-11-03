@@ -58,10 +58,10 @@ class RolesGive
         
     }
 
-    public static function searchId($id)
+    public static function searchId($codigo)
     {
         $con = new Connection();
-        $cont = $con->runQuery("select * from cliente where codigo = $id");
+        $cont = $con->runQuery("select * from cliente where codigo = $codigo");
 
         foreach ($cont as $key => $row){
             $lista[$key] = array(       //para retornar so um retirar [$key]

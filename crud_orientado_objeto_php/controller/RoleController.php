@@ -36,7 +36,7 @@ switch ($_GET['a'])
         break;
 
     case 'pesq':
-        $retorno = RolesGive::searchId($_POST['id']);
+        $retorno = RolesGive::searchId($_POST['codigo']);
         echo json_encode($retorno);
         break;
 

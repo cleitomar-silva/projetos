@@ -12,6 +12,35 @@
         <script src="../js/jquery-ui.js"></script><!-- pesquisar autocomplete -->
 
         <script src="../js/bootstrap.js"></script>
+
+        <style>
+            .lds-dual-ring {
+                display: inline-block;
+                width: 80px;
+                height: 80px;
+            }
+            .lds-dual-ring:after {
+                content: " ";
+                display: block;
+                width: 64px;
+                height: 64px;
+                margin: 8px;
+                border-radius: 50%;
+                border: 6px solid red;
+                border-color: red transparent red transparent;
+                animation: lds-dual-ring 1.2s linear infinite;
+            }
+            @keyframes lds-dual-ring {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+
+
+        </style>
     </head>
     <body>
         <div class="container mt-5">
@@ -19,7 +48,6 @@
                 <div class="col col-lg-6">
                     <h3>Papéis AutoComplete</h3>
                     <hr>
-
 
                    <form id="form1" method="POST">
                         <div class="form-group">
@@ -29,7 +57,7 @@
                         <div class="form-group">
                             <label for="nomePes">Codigo</label>
                             <input type="text" class="form-control" require name="codigoN" id="codigoN" placeholder="Digite o Nome" required>
-                        </div>                     
+                        </div>
 
 
                         <button type="submit" class="btn btn-primary">Enviar</button>
@@ -65,16 +93,30 @@
                     <button type="button" class="btn btn-danger" onclick="numero();">Click</button>
                 </div>
             </div>
+
+            <br>
+
+
+            <!-- load -->
+            <div id="load" class="lds-dual-ring"></div>
+
+
         </div>
-            
+
         <?php
-        print_r(RolesGive::searchId(10));
+      //  print_r(RolesGive::searchId(10));
+
+      /*  for ($i = 0; $i < 5000; $i++){
+            echo "INSERT INTO cliente (`nome`,`codigo`) VALUES ('cleiton{$i}', {$i});";
+        }*/
 
 
         ?>
+
+
         <br>digitar valor do codigo
         <form id="form">
-            <input type="text" name='id' id="id">
+            <input type="text" name='codigo' id="codigo">
             <input type="submit">
         </form>
       <!--  <input type="text" name='nome' id="nomeajax">-->
@@ -82,25 +124,26 @@
             <option value="">select</option>
         </select>
 
-    
 
-        <script>          
 
-            
+        <script>
+
+
+
                 //pesquisa
                 $(function(){
                     $("#nomePes").autocomplete({
-                        
-                        source: '../controller/RoleController.php?a=autocomplete',
-                        minLength: 4,                      
-                        select: function( event, ui ) {  
 
-                            setTimeout(function(){ 
-                                $("#codigoN").val(ui.item.value); 
-                                $("#nomePes").val(ui.item.label); 
-                            }, 0);  
-                        }                      
-                    })                  
+                        source: '../controller/RoleController.php?a=autocomplete',
+                        minLength: 4,
+                        select: function( event, ui ) {
+
+                            setTimeout(function(){
+                                $("#codigoN").val(ui.item.value);
+                                $("#nomePes").val(ui.item.label);
+                            }, 0);
+                        }
+                    })
                 });
 
 
@@ -109,17 +152,29 @@
 
             $(document).ready(function(){
 
-                $("#form").submit(function(){
-                    var id = $("#id").val();
-                    console.log(id)
-                    if(id == ""){
+                $("#form").submit(function(e){
+                    e.preventDefault();
+
+                    var codigo = $("#codigo").val();
+                    console.log(codigo)
+                    if(codigo == ""){
 
                     }else{
                         $.ajax({
                             url: '../controller/RoleController.php?a=pesq',
-                            data: {id: id},
+                            data: {codigo: codigo},
                             type: 'POST',
                             dataType: 'json',
+
+                            beforeSend: function (){
+                                //inicial modal
+                                //$('#load').show();
+                            },
+                            complete: function (){
+                                //finaliza modal
+                               // $('#load').hide();
+                            },
+
                             success: function(retorno){
                                 if(retorno == ''){
                                     alert('codigo nao cadastrado');
@@ -138,11 +193,11 @@
 
                             },
                             error: function(){
-                                alert("erro houve")
+                                alert("codigo nao cadastrado")
                             }
                         })
                     }
-                    return false;
+
                 })
             })
         </script>
