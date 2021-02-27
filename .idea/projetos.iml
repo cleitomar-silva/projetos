@@ -2,6 +2,7 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+<<<<<<< HEAD
       <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/PDF/vendor/sabberworm/php-css-parser" />
@@ -9,6 +10,15 @@
       <excludeFolder url="file://$MODULE_DIR$/PDF/vendor/phenx/php-svg-lib" />
       <excludeFolder url="file://$MODULE_DIR$/PDF/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/PDF/vendor/dompdf/dompdf" />
+=======
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/PDF/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/PDF/vendor/dompdf/dompdf" />
+      <excludeFolder url="file://$MODULE_DIR$/PDF/vendor/phenx/php-font-lib" />
+      <excludeFolder url="file://$MODULE_DIR$/PDF/vendor/phenx/php-svg-lib" />
+      <excludeFolder url="file://$MODULE_DIR$/PDF/vendor/sabberworm/php-css-parser" />
+>>>>>>> master
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

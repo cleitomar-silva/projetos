@@ -15,7 +15,6 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="composer.json" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -25,9 +24,9 @@
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/PDF/vendor/sabberworm/php-css-parser" />
+      <path value="$PROJECT_DIR$/PDF/vendor/composer" />
       <path value="$PROJECT_DIR$/PDF/vendor/phenx/php-font-lib" />
       <path value="$PROJECT_DIR$/PDF/vendor/phenx/php-svg-lib" />
-      <path value="$PROJECT_DIR$/PDF/vendor/composer" />
       <path value="$PROJECT_DIR$/PDF/vendor/dompdf/dompdf" />
     </include_path>
   </component>
@@ -40,7 +39,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cafaz_corretora_novo" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -54,11 +53,21 @@
       <workItem from="1604241186817" duration="2808000" />
       <workItem from="1604526503175" duration="473000" />
       <workItem from="1606256800788" duration="6582000" />
-      <workItem from="1614431776086" duration="6520000" />
+      <workItem from="1606340500421" duration="954000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1606342069485">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1606342069485" />
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1606262684055">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1606262684055" />
   </component>
 </project>

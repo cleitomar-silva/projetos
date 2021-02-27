@@ -3,9 +3,15 @@
   <component name="PhpIncludePathManager">
     <include_path>
       <path value="$PROJECT_DIR$/PDF/vendor/sabberworm/php-css-parser" />
+<<<<<<< HEAD
       <path value="$PROJECT_DIR$/PDF/vendor/phenx/php-font-lib" />
       <path value="$PROJECT_DIR$/PDF/vendor/phenx/php-svg-lib" />
       <path value="$PROJECT_DIR$/PDF/vendor/composer" />
+=======
+      <path value="$PROJECT_DIR$/PDF/vendor/composer" />
+      <path value="$PROJECT_DIR$/PDF/vendor/phenx/php-font-lib" />
+      <path value="$PROJECT_DIR$/PDF/vendor/phenx/php-svg-lib" />
+>>>>>>> master
       <path value="$PROJECT_DIR$/PDF/vendor/dompdf/dompdf" />
     </include_path>
   </component>
