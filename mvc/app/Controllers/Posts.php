@@ -106,6 +106,11 @@ class Posts extends Controller
     {
         $post = $this->postModel->lerPostPorId($id);
 
+
+        if($post == null){
+            Url::redirecionar('paginas/erro');
+        }
+
         $dados = [
             'post' => $post
         ];
