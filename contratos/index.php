@@ -52,6 +52,15 @@
             border: 1px solid;
             color: #1a1e21;
         }
+        .black-white-redef
+        {
+            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+            border-radius: 0 30px 30px 0;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
 
     </style>
 </head>
